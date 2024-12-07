@@ -1,2 +1,3 @@
 # eos-settings-xfce4
-XFCE4 settings for EndeavourOS
+new simplified basic XFCE4 settings for EndeavourOS
+December 2024
