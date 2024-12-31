@@ -283,6 +283,84 @@
 				<property name="workspace4" type="empty">
 					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
 			</property>
+			<!-- DVI1 -->
+			<property name="DVI1" type="empty">
+				<property name="workspace0" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace1" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace2" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace3" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace4" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+			</property>
+			<!-- DVI2 -->
+			<property name="monitorDVI2" type="empty">
+				<property name="workspace0" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace1" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace2" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace3" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace4" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+			</property>
+			<!-- DVI3 -->
+			<property name="monitorDVI3" type="empty">
+				<property name="workspace0" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace1" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace2" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace3" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace4" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+			</property>
+			<!-- DVI-1 -->
+			<property name="DVI-1" type="empty">
+				<property name="workspace0" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace1" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace2" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace3" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace4" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+			</property>
+			<!-- DVI-2 -->
+			<property name="monitorDVI-2" type="empty">
+				<property name="workspace0" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace1" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace2" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace3" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace4" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+			</property>
+			<!-- DVI-3 -->
+			<property name="monitorDVI-3" type="empty">
+				<property name="workspace0" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace1" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace2" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace3" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+				<property name="workspace4" type="empty">
+					<property name="last-image" type="string" value="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper-dark.png"/></property>
+			</property>
 			<!-- Monitor VGA1 -->
 			<property name="monitorVGA1" type="empty">
 				<property name="workspace0" type="empty">
