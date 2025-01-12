@@ -1,0 +1,98 @@
+#!/bin/bash
+
+DIE() { echo "$progname: error: $1" >&2; exit 1; }
+
+Start() {
+    cat <<EOF
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-desktop" version="1.0">
+EOF
+}
+End() {
+    cat <<EOF
+  <property name="last" type="empty">
+    <property name="window-width" type="int" value="$win_width"/>
+    <property name="window-height" type="int" value="$win_height"/>
+  </property>
+  <property name="desktop-icons" type="empty">
+    <property name="file-icons" type="empty">
+      <property name="show-home" type="bool" value="false"/>
+      <property name="show-filesystem" type="bool" value="false"/>
+      <property name="show-trash" type="bool" value="false"/>
+      <property name="show-removable" type="bool" value="false"/>
+    </property>
+  </property>
+  <property name="desktop-menu" type="empty">
+    <property name="show" type="bool" value="true"/>
+    <property name="show-icons" type="bool" value="true"/>
+  </property>
+  <property name="windowlist-menu" type="empty">
+    <property name="show-icons" type="bool" value="true"/>
+    <property name="show-workspace-names" type="bool" value="true"/>
+    <property name="show-submenus" type="bool" value="false"/>
+  </property>
+</channel>
+EOF
+}
+
+Monitors() {
+    local monitors=$(xrandr | grep connected | awk '{print $1}')
+    [ "$monitors" ] || DIE "no monitors found!"
+    monitors=$(echo "$monitors" | sed 's|^|monitor|' )
+    monitors=(monitor0 monitor1 $monitors)
+    printf "%s\n" "${monitors[@]}"
+}
+
+Usage() {
+    cat <<EOF >&2
+Purpose: generate the contents of file xfce4-desktop.xml to standard output.
+Usage:   $progname [options]
+Options: --wall=X           X = full path to the desired wallpaper file.
+         --width=X          X = window width property.
+         --height=X         X = window height property.
+EOF
+    [ "$1" ] && exit $1
+}
+
+Main() {
+    local -r progname=${0##*/}
+    local wallpaper="/usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png"   # png -> avif  ??
+    local win_width="1229"
+    local win_height="1011"
+    local monitors=""
+
+    monitors=$(Monitors) || return 1
+
+    while [ "$1" ] ; do
+        case "$1" in
+            --wall=*)   wallpaper=${1#*=} ;;
+            --width=*)  win_width=${1#*=} ;;
+            --height=*) win_height=${1#*=} ;;
+            -h | --help) Usage 0 ;;
+        esac
+        shift
+    done
+
+    Start
+
+    echo '  <property name="backdrop" type="empty">'
+    echo '    <property name="screen0" type="empty">'
+    for monitor in $monitors ; do
+        echo "      <property name=\"$monitor\" type=\"empty\">"
+        for workspace in workspace{0..5} ; do
+            echo "        <property name=\"$workspace\" type=\"empty\">"
+            echo '          <property name="color-style" type="int" value="0"/>'
+            echo '          <property name="image-style" type="int" value="5"/>'
+            echo "          <property name=\"last-image\" type=\"string\" value=\"$wallpaper\"/>"
+            echo "        </property>"
+        done
+        echo "      </property>"
+    done
+    echo '    </property>'
+    echo '  </property>'
+
+    End
+}
+
+Main "$@"
