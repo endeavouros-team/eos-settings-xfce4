@@ -2,8 +2,8 @@
 Encoding=UTF-8
 Version=0.9.4
 Type=Application
-Name=set_once
-Comment=set up xed once
+Name=set_once_xfce4
+Comment=set wallpaper
 Exec=sh -c ~/set_once_xfce4.sh
 RunHook=0
 StartupNotify=false
