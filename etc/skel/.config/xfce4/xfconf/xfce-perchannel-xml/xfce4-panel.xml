@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="xfce4-panel" version="1.0">
   <property name="configver" type="int" value="2"/>
@@ -71,6 +71,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="ethernet-netzverbindung »kabelgebundene verbindung 1« ist aktiv"/>
         <value type="string" value="ethernet network connection “wired connection 1” active"/>
         <value type="string" value="firewall-applet"/>
         <value type="string" value=""/>
@@ -88,7 +89,6 @@
     <property name="plugin-11" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-12" type="string" value="clock"/>
     <property name="plugin-13" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
@@ -191,6 +191,13 @@
     </property>
     <property name="plugin-27" type="string" value="separator">
       <property name="style" type="uint" value="2"/>
+    </property>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="digital-layout" type="uint" value="3"/>
+      <property name="digital-time-format" type="string" value="%T"/>
+      <property name="digital-time-font" type="string" value="Noto Sans 10"/>
+      <property name="tooltip-format" type="string" value="%x"/>
+      <property name="show-week-numbers" type="bool" value="true"/>
     </property>
   </property>
 </channel>
