@@ -35,11 +35,14 @@
     <property name="DecorationLayout" type="string" value="icon,menu:minimize,maximize,close"/>
     <property name="DialogsUseHeader" type="empty"/>
     <property name="TitlebarMiddleClick" type="empty"/>
+    <property name="ApplicationPreferDarkTheme" type="bool" value="true"/>
     <property name="ToolbarStyle" type="empty"/>
     <property name="ToolbarIconSize" type="empty"/>
   </property>
   <property name="Gdk" type="empty">
     <property name="WindowScalingFactor" type="empty"/>
   </property>
+  <property name="Xfce" type="empty">
+    <property name="SyncThemes" type="bool" value="true"/>
+  </property>
 </channel>
-
